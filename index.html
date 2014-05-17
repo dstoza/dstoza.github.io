@@ -77,137 +77,54 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/2013/12/28/introducing-hyde/">
-        Introducing Hyde
+      <a href="/2014/04/11/the-fxm-project/">
+        The Fxm Project
       </a>
     </h1>
 
-    <span class="post-date">28 Dec 2013</span>
+    <span class="post-date">11 Apr 2014</span>
 
-    <p>Hyde is a brazen two-column <a href="http://jekyllrb.com">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. It&#39;s based on <a href="http://getpoole.com">Poole</a>, the Jekyll butler.</p>
+    <p>Based on the entirely awesome <a href="http://www.homebrewcpu.com">Homebrew CPU</a> project, I decided that it would be fun to
+build my own (primarily) 74-series CPU and a computer system around it. I&#39;ve done some preliminary
+design, but this is sort of a daunting task, so it&#39;s going to take a while.</p>
 
-<h3>Built on Poole</h3>
-
-<p>Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by <a href="https://twitter.com/mdo">@mdo</a>. Poole, and every theme built on it (like Hyde here) includes the following:</p>
-
-<ul>
-<li>Complete Jekyll setup included (layouts, config, <a href="/404">404</a>, <a href="/atom.xml">RSS feed</a>, posts, and <a href="/about">example page</a>)</li>
-<li>Mobile friendly design and development</li>
-<li>Easily scalable text and component sizing with <code>rem</code> units in the CSS</li>
-<li>Support for a wide gamut of HTML elements</li>
-<li>Related posts (time-based, because Jekyll) below each post</li>
-<li>Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)</li>
-</ul>
-
-<h3>Hyde features</h3>
-
-<p>In addition to the features of Poole, Hyde adds the following:</p>
+<p>I&#39;d like the computer to be fairly well-rounded and as modern as is reasonable for something
+hand-built, so my initial list of features looks something like this:</p>
 
 <ul>
-<li>Sidebar includes support for textual modules and a dynamically generated navigation with active link support</li>
-<li>Two orientations for content and sidebar, default (left sidebar) and <a href="https://github.com/poole/lanyon#reverse-layout">reverse</a> (right sidebar), available via <code>&lt;body&gt;</code> classes</li>
-<li><a href="https://github.com/poole/hyde#themes">Eight optional color schemes</a>, available via <code>&lt;body&gt;</code> classes</li>
-</ul>
-
-<p><a href="https://github.com/poole/hyde#readme">Head to the readme</a> to learn more.</p>
-
-<h3>Browser support</h3>
-
-<p>Hyde is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.</p>
-
-<h3>Download</h3>
-
-<p>Hyde is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/hyde">GitHub repository</a> for downloads, bug reports, and features requests.</p>
-
-<p>Thanks!</p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/2012/02/07/example-content/">
-        Example content
-      </a>
-    </h1>
-
-    <span class="post-date">07 Feb 2012</span>
-
-    <p>This blog post shows a few different types of content that&#39;s supported and styled with Hyde. Basic typography, images, and code are all supported.</p>
-
-<hr>
-
-<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-
-<blockquote>
-<p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-</blockquote>
-
-<p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-
-<h2>Heading</h2>
-
-<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-
-<h3>Sub-heading</h3>
-
-<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-<div class="highlight"><pre><code class="js"><span class="c1">// Example can be run directly in your JavaScript console</span>
-
-<span class="c1">// Create a function that takes two arguments and returns the sum of those arguments</span>
-<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;return a + b&quot;</span><span class="p">);</span>
-
-<span class="c1">// Call the function</span>
-<span class="nx">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
-<span class="c1">// &gt; 8</span>
-</code></pre></div>
-
-<p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-
-<h3>Sub-heading</h3>
-
-<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+<li>Fairly minimal RISC instruction set (it&#39;s looking rather similar to MIPS right now)</li>
+<li>3-stage pipeline
 
 <ul>
-<li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-<li>Donec id elit non mi porta gravida at eget metus.</li>
-<li>Nulla vitae elit libero, a pharetra augue.</li>
+<li>Fetch/decode</li>
+<li>Register read/execute</li>
+<li>Memory/writeback</li>
+</ul></li>
+<li>32-bit instruction and native word size</li>
+<li>8 addressable registers: SP, FP, return address, and some GPRs</li>
+<li>24-bit virtual addressing</li>
+<li>Modified Harvard architecture (instruction &quot;cache&quot; copies pages from main memory)</li>
+<li>Copy-on-write and demand paging</li>
+<li>Up to 16MB physical memory, banked for fast memory-to-memory copies</li>
+<li>Several expansion slots (MMIO + IRQ lines)
+
+<ul>
+<li>Ethernet</li>
+<li>UART</li>
+<li>Programmable timer</li>
+<li>Random number generator</li>
+<li>Flash storage</li>
+<li>VGA graphics (character mode, not full framebuffer)</li>
+</ul></li>
+<li>~25MHz to use the system clock to drive VGA</li>
 </ul>
 
-<p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+<p>I&#39;m currently calling it FXM for the three pipeline stages: <strong>F</strong>etch, e<strong>X</strong>ecute, <strong>M</strong>emory, but
+I&#39;m not completely in love with the name, so consider it a codename for now, pending a better name.</p>
 
-<ol>
-<li>Vestibulum id ligula porta felis euismod semper.</li>
-<li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-<li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-</ol>
-
-<p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
-
-<hr>
-
-<p>Want to see something else added? <a href="https://github.com/mdo/hyde/issues/new">Open an issue.</a></p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/2012/02/06/whats-jekyll/">
-        What's Jekyll?
-      </a>
-    </h1>
-
-    <span class="post-date">06 Feb 2012</span>
-
-    <p><a href="http://jekyllrb.com">Jekyll</a> is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From <a href="https://github.com/mojombo/jekyll/blob/master/README.markdown">the project&#39;s readme</a>:</p>
-
-<blockquote>
-<p>Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</p>
-</blockquote>
-
-<p>It&#39;s an immensely useful tool and one we encourage you to use here with Hyde.</p>
-
-<p>Find out more by <a href="https://github.com/mojombo/jekyll">visiting the project on GitHub</a>.</p>
+<p>Instead of trying to settle on the final instruction set before everything is pinned down, I&#39;m
+going to start by creating a simulator in <a href="http://en.wikipedia.org/wiki/SystemC">SystemC</a>. That should help me figure out what
+signals I&#39;m going to need and what the general block layout of the system is going to be.</p>
 
   </div>
   
