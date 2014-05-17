@@ -4,7 +4,7 @@
  <title>Prefabulated</title>
  <link href="http://prefabulated.com/atom.xml" rel="self"/>
  <link href="http://prefabulated.com/"/>
- <updated>2014-05-17T07:55:00-07:00</updated>
+ <updated>2014-05-17T09:31:46-07:00</updated>
  <id>http://prefabulated.com</id>
  <author>
    <name>Dan Stoza</name>
@@ -13,19 +13,48 @@
 
  
  <entry>
+   <title>FXM ISA Almost Complete</title>
+   <link href="http://prefabulated.com/2014/05/17/fxm-isa-almost-complete/"/>
+   <updated>2014-05-17T00:00:00-07:00</updated>
+   <id>http://prefabulated.com/2014/05/17/fxm-isa-almost-complete</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;This is part of an &lt;a href=&quot;/fxm-overview&quot;&gt;ongoing project&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1&gt;Who you gonna call?&lt;/h1&gt;
+
+&lt;p&gt;This blog has moved from a self-hosted instance of &lt;a href=&quot;http://ghost.org&quot;&gt;Ghost&lt;/a&gt; to &lt;a href=&quot;https://pages.github.com&quot;&gt;GitHub
+Pages&lt;/a&gt;. I decided to do this because I spent a couple of days putting
+together a long status update and a document on the FXM ISA and posted them to
+my site earlier this week. After I restarted my machine for some routine
+maintenance, somehow the two new posts were gone. The post I wrote over a month
+ago was still there, so it wasn&amp;#39;t a total data loss, but it seems like the
+posts were in memory somewhere but never got pushed to the on-disk database.&lt;/p&gt;
+
+&lt;p&gt;As much as I liked the Ghost platform, if it&amp;#39;s going to drop stuff on the
+ground without warning, I&amp;#39;m going to go elsewhere. With Pages, I can keep all
+my stuff in a Git repo, and still feel like I can reboot my machine without
+losing stuff. It&amp;#39;s a shame, because the realtime Markdown preview was slick.&lt;/p&gt;
+
+&lt;h1&gt;So where was I...&lt;/h1&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>The FXM Project</title>
    <link href="http://prefabulated.com/2014/04/11/the-fxm-project/"/>
    <updated>2014-04-11T00:00:00-07:00</updated>
    <id>http://prefabulated.com/2014/04/11/the-fxm-project</id>
-   <content type="html">&lt;p&gt;Based on the entirely awesome &lt;a href=&quot;http://www.homebrewcpu.com&quot;&gt;Homebrew CPU&lt;/a&gt; project, I decided that it would be fun to
-build my own (primarily) 74-series CPU and a computer system around it. I&amp;#39;ve done some preliminary
-design, but this is sort of a daunting task, so it&amp;#39;s going to take a while.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Based on the entirely awesome &lt;a href=&quot;http://www.homebrewcpu.com&quot;&gt;Homebrew CPU&lt;/a&gt; project, I decided that
+it would be fun to build my own (primarily) 74-series CPU and a computer system
+around it. I&amp;#39;ve done some preliminary design, but this is sort of a daunting
+task, so it&amp;#39;s going to take a while.&lt;/p&gt;
 
-&lt;p&gt;I&amp;#39;d like the computer to be fairly well-rounded and as modern as is reasonable for something
-hand-built, so my initial list of features looks something like this:&lt;/p&gt;
+&lt;p&gt;I&amp;#39;d like the computer to be fairly well-rounded and as modern as is reasonable
+for something hand-built, so my initial list of features looks something like
+this:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Fairly minimal RISC instruction set (it&amp;#39;s looking rather similar to MIPS right now)&lt;/li&gt;
+&lt;li&gt;Fairly minimal RISC instruction set (it&amp;#39;s looking rather similar to MIPS
+right now)&lt;/li&gt;
 &lt;li&gt;3-stage pipeline
 
 &lt;ul&gt;
@@ -36,7 +65,8 @@ hand-built, so my initial list of features looks something like this:&lt;/p&gt;
 &lt;li&gt;32-bit instruction and native word size&lt;/li&gt;
 &lt;li&gt;8 addressable registers: SP, FP, return address, and some GPRs&lt;/li&gt;
 &lt;li&gt;24-bit virtual addressing&lt;/li&gt;
-&lt;li&gt;Modified Harvard architecture (instruction &amp;quot;cache&amp;quot; copies pages from main memory)&lt;/li&gt;
+&lt;li&gt;Modified Harvard architecture (instruction &amp;quot;cache&amp;quot; copies pages from main
+memory)&lt;/li&gt;
 &lt;li&gt;Copy-on-write and demand paging&lt;/li&gt;
 &lt;li&gt;Up to 16MB physical memory, banked for fast memory-to-memory copies&lt;/li&gt;
 &lt;li&gt;Several expansion slots (MMIO + IRQ lines)
@@ -52,12 +82,14 @@ hand-built, so my initial list of features looks something like this:&lt;/p&gt;
 &lt;li&gt;~25MHz to use the system clock to drive VGA&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;I&amp;#39;m currently calling it FXM for the three pipeline stages: &lt;strong&gt;F&lt;/strong&gt;etch, e&lt;strong&gt;X&lt;/strong&gt;ecute, &lt;strong&gt;M&lt;/strong&gt;emory, but
-I&amp;#39;m not completely in love with the name, so consider it a codename for now, pending a better name.&lt;/p&gt;
+&lt;p&gt;I&amp;#39;m currently calling it FXM for the three pipeline stages: &lt;strong&gt;F&lt;/strong&gt;etch,
+e&lt;strong&gt;X&lt;/strong&gt;ecute, &lt;strong&gt;M&lt;/strong&gt;emory, but I&amp;#39;m not completely in love with the name, so
+consider it a codename for now, pending a better name.&lt;/p&gt;
 
-&lt;p&gt;Instead of trying to settle on the final instruction set before everything is pinned down, I&amp;#39;m
-going to start by creating a simulator in &lt;a href=&quot;http://en.wikipedia.org/wiki/SystemC&quot;&gt;SystemC&lt;/a&gt;. That should help me figure out what
-signals I&amp;#39;m going to need and what the general block layout of the system is going to be.&lt;/p&gt;
+&lt;p&gt;Instead of trying to settle on the final instruction set before everything is
+pinned down, I&amp;#39;m going to start by creating a simulator in &lt;a href=&quot;http://en.wikipedia.org/wiki/SystemC&quot;&gt;SystemC&lt;/a&gt;.
+That should help me figure out what signals I&amp;#39;m going to need and what the
+general block layout of the system is going to be.&lt;/p&gt;
 </content>
  </entry>
  

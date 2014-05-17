@@ -77,6 +77,36 @@
   
   <div class="post">
     <h1 class="post-title">
+      <a href="/2014/05/17/fxm-isa-almost-complete/">
+        FXM ISA Almost Complete
+      </a>
+    </h1>
+
+    <span class="post-date">17 May 2014</span>
+
+    <p><em>This is part of an <a href="/fxm-overview">ongoing project</a></em></p>
+
+<h1>Who you gonna call?</h1>
+
+<p>This blog has moved from a self-hosted instance of <a href="http://ghost.org">Ghost</a> to <a href="https://pages.github.com">GitHub
+Pages</a>. I decided to do this because I spent a couple of days putting
+together a long status update and a document on the FXM ISA and posted them to
+my site earlier this week. After I restarted my machine for some routine
+maintenance, somehow the two new posts were gone. The post I wrote over a month
+ago was still there, so it wasn&#39;t a total data loss, but it seems like the
+posts were in memory somewhere but never got pushed to the on-disk database.</p>
+
+<p>As much as I liked the Ghost platform, if it&#39;s going to drop stuff on the
+ground without warning, I&#39;m going to go elsewhere. With Pages, I can keep all
+my stuff in a Git repo, and still feel like I can reboot my machine without
+losing stuff. It&#39;s a shame, because the realtime Markdown preview was slick.</p>
+
+<h1>So where was I...</h1>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
       <a href="/2014/04/11/the-fxm-project/">
         The FXM Project
       </a>
@@ -84,15 +114,18 @@
 
     <span class="post-date">11 Apr 2014</span>
 
-    <p>Based on the entirely awesome <a href="http://www.homebrewcpu.com">Homebrew CPU</a> project, I decided that it would be fun to
-build my own (primarily) 74-series CPU and a computer system around it. I&#39;ve done some preliminary
-design, but this is sort of a daunting task, so it&#39;s going to take a while.</p>
+    <p>Based on the entirely awesome <a href="http://www.homebrewcpu.com">Homebrew CPU</a> project, I decided that
+it would be fun to build my own (primarily) 74-series CPU and a computer system
+around it. I&#39;ve done some preliminary design, but this is sort of a daunting
+task, so it&#39;s going to take a while.</p>
 
-<p>I&#39;d like the computer to be fairly well-rounded and as modern as is reasonable for something
-hand-built, so my initial list of features looks something like this:</p>
+<p>I&#39;d like the computer to be fairly well-rounded and as modern as is reasonable
+for something hand-built, so my initial list of features looks something like
+this:</p>
 
 <ul>
-<li>Fairly minimal RISC instruction set (it&#39;s looking rather similar to MIPS right now)</li>
+<li>Fairly minimal RISC instruction set (it&#39;s looking rather similar to MIPS
+right now)</li>
 <li>3-stage pipeline
 
 <ul>
@@ -103,7 +136,8 @@ hand-built, so my initial list of features looks something like this:</p>
 <li>32-bit instruction and native word size</li>
 <li>8 addressable registers: SP, FP, return address, and some GPRs</li>
 <li>24-bit virtual addressing</li>
-<li>Modified Harvard architecture (instruction &quot;cache&quot; copies pages from main memory)</li>
+<li>Modified Harvard architecture (instruction &quot;cache&quot; copies pages from main
+memory)</li>
 <li>Copy-on-write and demand paging</li>
 <li>Up to 16MB physical memory, banked for fast memory-to-memory copies</li>
 <li>Several expansion slots (MMIO + IRQ lines)
@@ -119,12 +153,14 @@ hand-built, so my initial list of features looks something like this:</p>
 <li>~25MHz to use the system clock to drive VGA</li>
 </ul>
 
-<p>I&#39;m currently calling it FXM for the three pipeline stages: <strong>F</strong>etch, e<strong>X</strong>ecute, <strong>M</strong>emory, but
-I&#39;m not completely in love with the name, so consider it a codename for now, pending a better name.</p>
+<p>I&#39;m currently calling it FXM for the three pipeline stages: <strong>F</strong>etch,
+e<strong>X</strong>ecute, <strong>M</strong>emory, but I&#39;m not completely in love with the name, so
+consider it a codename for now, pending a better name.</p>
 
-<p>Instead of trying to settle on the final instruction set before everything is pinned down, I&#39;m
-going to start by creating a simulator in <a href="http://en.wikipedia.org/wiki/SystemC">SystemC</a>. That should help me figure out what
-signals I&#39;m going to need and what the general block layout of the system is going to be.</p>
+<p>Instead of trying to settle on the final instruction set before everything is
+pinned down, I&#39;m going to start by creating a simulator in <a href="http://en.wikipedia.org/wiki/SystemC">SystemC</a>.
+That should help me figure out what signals I&#39;m going to need and what the
+general block layout of the system is going to be.</p>
 
   </div>
   
