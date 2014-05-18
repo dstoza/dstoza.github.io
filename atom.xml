@@ -4,7 +4,7 @@
  <title>Prefabulated</title>
  <link href="http://prefabulated.com/atom.xml" rel="self"/>
  <link href="http://prefabulated.com/"/>
- <updated>2014-05-17T18:27:47-07:00</updated>
+ <updated>2014-05-17T18:30:28-07:00</updated>
  <id>http://prefabulated.com</id>
  <author>
    <name>Dan Stoza</name>
@@ -25,15 +25,15 @@
 Pages&lt;/a&gt;. I decided to do this because I spent a couple of days
 putting together a long status update and a document on the FXM ISA and posted
 them to my site earlier this week. After I restarted my machine for some
-routine maintenance, somehow the two new posts were gone. The post I wrote over
-a month ago was still there, so it wasn&amp;#39;t a total data loss, but it seems like
-the posts were in memory somewhere but never got pushed to the on-disk
-database.&lt;/p&gt;
+routine maintenance, the two new posts were gone. The post I wrote over a month
+ago was still there, so it wasn&amp;#39;t a total data loss, but it seems like the
+posts were in memory somewhere but never got flushed to the on-disk database.&lt;/p&gt;
 
-&lt;p&gt;As much as I liked the Ghost platform, if it&amp;#39;s going to drop stuff on the
-ground without warning, I&amp;#39;m going to go elsewhere. With Pages, I can keep all
-my stuff in a Git repo, and still feel like I can reboot my machine without
-losing stuff. It&amp;#39;s a shame, because the realtime Markdown preview was slick.&lt;/p&gt;
+&lt;p&gt;As much as I liked the Ghost platform, if it&amp;#39;s going to drop stuff on the floor
+without warning, I&amp;#39;m going to go elsewhere. With Pages, I can keep all my stuff
+in a GitHub repo and trust that I can reboot my machine without losing stuff,
+since there&amp;#39;s a copy in The Cloud. It&amp;#39;s a shame, though, because the realtime
+Markdown preview was slick.&lt;/p&gt;
 
 &lt;h2&gt;So where was I...&lt;/h2&gt;
 
