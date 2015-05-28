@@ -4,7 +4,7 @@
  <title>Prefabulated</title>
  <link href="http://prefabulated.com/atom.xml" rel="self"/>
  <link href="http://prefabulated.com/"/>
- <updated>2014-05-27T21:02:30-07:00</updated>
+ <updated>2015-05-27T21:23:38-07:00</updated>
  <id>http://prefabulated.com</id>
  <author>
    <name>Dan Stoza</name>
@@ -17,7 +17,7 @@
    <link href="http://prefabulated.com/2014/05/17/fxm-isa-almost-complete/"/>
    <updated>2014-05-17T00:00:00-07:00</updated>
    <id>http://prefabulated.com/2014/05/17/fxm-isa-almost-complete</id>
-   <content type="html">&lt;p&gt;&lt;em&gt;This is part of the &lt;a href=&quot;/fxm-overview&quot;&gt;FXM Project&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;em&gt;This is part of the &lt;a href=&quot;/v3ga-overview&quot;&gt;V3GA Project&lt;/a&gt;, formerly named FXM.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2&gt;Who you gonna call?&lt;/h2&gt;
 
@@ -198,7 +198,9 @@ more investigation.&lt;/p&gt;
    <link href="http://prefabulated.com/2014/04/11/the-fxm-project/"/>
    <updated>2014-04-11T00:00:00-07:00</updated>
    <id>http://prefabulated.com/2014/04/11/the-fxm-project</id>
-   <content type="html">&lt;p&gt;Based on the entirely awesome &lt;a href=&quot;http://www.homebrewcpu.com&quot;&gt;Homebrew CPU&lt;/a&gt; project, I decided that
+   <content type="html">&lt;p&gt;&lt;em&gt;Note: I have since changed the project name from FXM to V3GA.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Based on the entirely awesome &lt;a href=&quot;http://www.homebrewcpu.com&quot;&gt;Homebrew CPU&lt;/a&gt; project, I decided that
 it would be fun to build my own (primarily) 74-series CPU and a computer system
 around it. I&amp;#39;ve done some preliminary design, but this is sort of a daunting
 task, so it&amp;#39;s going to take a while.&lt;/p&gt;
