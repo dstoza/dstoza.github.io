@@ -5,8 +5,12 @@
     </ModulePrefs>
     <Content type="html">
         <![CDATA[
-            <script src="//plus.google.com/hangouts/_/api/v1/hangout.js></script>
-            <p>Hello world!</p>
+<html>
+    <body>
+        <script src="//plus.google.com/hangouts/_/api/v1/hangout.js></script>
+        <p>Hello world!</p>
+    </body>
+</html>
         ]]>
     </Content>
 </Module>
