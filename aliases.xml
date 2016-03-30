@@ -5,12 +5,13 @@
     </ModulePrefs>
     <Content type="html">
         <![CDATA[
-<html>
-    <body>
-        <script src="//plus.google.com/hangouts/_/api/v1/hangout.js></script>
-        <p>Hello world!</p>
-    </body>
-</html>
+            <!DOCTYPE html>
+            <script type="text/javascript" src="//www.google.com/jsapi"></script>
+            <script type="text/javascript">google.load("jquery", "1.3.2");</script>
+            <script type="text/javascript"
+                src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
+            <script type="text/javascript" src="//plushangoutsstartershadow.appspot.com/ggs/yesnomaybe.js></script>
+            <p>Hello, world</p>
         ]]>
     </Content>
 </Module>
