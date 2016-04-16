@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Module>
-  <ModulePrefs title="Yes/No/Maybe" height="100" width="550">
-  <Require feature="dynamic-height"/>
+  <ModulePrefs title="Yes/No/Maybe">
   <Require feature="rpc"/>
 </ModulePrefs>
 <Content type="html"><![CDATA[
