@@ -31,7 +31,10 @@
 
         {% assign post = site.posts.first %}
         {% assign content = post.content %}
-        {% include post_core.html %}
+
+        <h1><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h1>
+
+        {{ content }}
 
         {% include footer.html %}
 
