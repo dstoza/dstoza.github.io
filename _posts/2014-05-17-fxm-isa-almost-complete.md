@@ -4,7 +4,7 @@ title: FXM ISA Almost Complete
 tags: v3ga
 ---
 
-*This is part of the [V3GA Project][v3ga-overview], formerly named FXM.*
+*Note: I have since changed the project name from FXM to V3GA.*
 
 ## Who you gonna call?
 
