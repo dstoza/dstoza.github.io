@@ -27,11 +27,7 @@
           <p>{{ site.description }}</p>
         </div>
 
-        <hr>
-
-        {% assign post = site.posts.first %}
-        {% assign content = post.content %}
-        {% import "post_core.html" %}
+        {{ content }}
 
         <hr>
 
