@@ -1,0 +1,34 @@
+---
+---
+
+@import "jekyll-theme-minimal";
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=block');
+
+body {
+  background-color: #2e3440;
+  color: #eceff4;
+  font: 16px / 1.5 "Atkinson Hyperlegible", Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+strong {
+  color: #eceff4;
+}
+
+a {
+  color: #81a1c1;
+}
+
+a:hover {
+  color: #88c0d0;
+  font-weight: normal;
+}
+
+h1 a:hover {
+  font-weight: bold;
+}
+
+code {
+  color: #eceff4;
+}
